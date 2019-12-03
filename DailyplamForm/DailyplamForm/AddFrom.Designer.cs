@@ -1,6 +1,6 @@
 ﻿namespace DailyplamForm
 {
-    partial class Form1
+    partial class AddForm
     {
         /// <summary>
         /// Required designer variable.
@@ -50,9 +50,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 47);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
+            this.label2.Size = new System.Drawing.Size(56, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "kế hoạch";
+            this.label2.Text = "Kế hoạch:";
             // 
             // rtbPlan
             // 
@@ -64,7 +64,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(28, 226);
+            this.btnAdd.Location = new System.Drawing.Point(30, 214);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 4;
@@ -73,7 +73,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(166, 226);
+            this.btnCancel.Location = new System.Drawing.Point(166, 214);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 5;
@@ -105,7 +105,7 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "phút";
             // 
-            // Form1
+            // AddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -118,8 +118,8 @@
             this.Controls.Add(this.rtbPlan);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dateTimePicker1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "AddForm";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
