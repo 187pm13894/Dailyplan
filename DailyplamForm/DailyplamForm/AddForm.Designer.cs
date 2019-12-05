@@ -91,15 +91,15 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(120, 163);
+            this.textBox1.Location = new System.Drawing.Point(117, 163);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
+            this.textBox1.Size = new System.Drawing.Size(83, 20);
             this.textBox1.TabIndex = 7;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(244, 166);
+            this.label3.Location = new System.Drawing.Point(206, 166);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(28, 13);
             this.label3.TabIndex = 8;
@@ -119,6 +119,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dateTimePicker1);
             this.Name = "AddForm";
+            this.Text = "Thêm";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

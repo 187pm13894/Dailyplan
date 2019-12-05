@@ -15,6 +15,21 @@ namespace DailyplamForm
         public IndexForm()
         {
             InitializeComponent();
+            this.Load += IndexForm_Load;
+            this.btnAdd.Click += btnAdd_Click;
+
+        }
+
+        void btnAdd_Click(object sender, EventArgs e)
+        {
+            var AddForm = new AddForm();
+            AddForm.ShowDialog();
+            
+        }
+
+        void IndexForm_Load(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         
