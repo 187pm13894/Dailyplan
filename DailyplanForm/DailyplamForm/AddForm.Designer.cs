@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpPlan = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.rtbPlan = new System.Windows.Forms.RichTextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTime = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // dateTimePicker1
+            // dtpPlan
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(12, 12);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(260, 20);
-            this.dateTimePicker1.TabIndex = 1;
+            this.dtpPlan.Location = new System.Drawing.Point(12, 12);
+            this.dtpPlan.Name = "dtpPlan";
+            this.dtpPlan.Size = new System.Drawing.Size(260, 20);
+            this.dtpPlan.TabIndex = 1;
             // 
             // label2
             // 
@@ -89,12 +89,12 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Thời gian thực hiện:";
             // 
-            // textBox1
+            // txtTime
             // 
-            this.textBox1.Location = new System.Drawing.Point(117, 163);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(83, 20);
-            this.textBox1.TabIndex = 7;
+            this.txtTime.Location = new System.Drawing.Point(117, 163);
+            this.txtTime.Name = "txtTime";
+            this.txtTime.Size = new System.Drawing.Size(83, 20);
+            this.txtTime.TabIndex = 7;
             // 
             // label3
             // 
@@ -111,13 +111,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTime);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.rtbPlan);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpPlan);
             this.Name = "AddForm";
             this.Text = "Thêm";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -128,13 +128,13 @@
 
         #endregion
 
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpPlan;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RichTextBox rtbPlan;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTime;
         private System.Windows.Forms.Label label3;
     }
 }

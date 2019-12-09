@@ -41,6 +41,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
@@ -59,29 +60,11 @@
     <Compile Include="AddForm.Designer.cs">
       <DependentUpon>AddForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DPLAN.cs">
-      <DependentUpon>Plan.tt</DependentUpon>
-    </Compile>
     <Compile Include="IndexForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="IndexForm.Designer.cs">
       <DependentUpon>IndexForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Plan.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Plan.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Plan.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Plan.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Plan.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Plan.edmx</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -109,24 +92,7 @@
     <EmbeddedResource Include="UpdateForm.resx">
       <DependentUpon>UpdateForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EntityDeploy Include="Plan.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Plan.Designer.cs</LastGenOutput>
-    </EntityDeploy>
     <None Include="packages.config" />
-    <None Include="Plan.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Plan.edmx</DependentUpon>
-      <LastGenOutput>Plan.Context.cs</LastGenOutput>
-    </None>
-    <None Include="Plan.edmx.diagram">
-      <DependentUpon>Plan.edmx</DependentUpon>
-    </None>
-    <None Include="Plan.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Plan.edmx</DependentUpon>
-      <LastGenOutput>Plan.cs</LastGenOutput>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

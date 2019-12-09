@@ -17,7 +17,13 @@ namespace DailyplamForm
             InitializeComponent();
             this.Load += IndexForm_Load;
             this.btnAdd.Click += btnAdd_Click;
+            this.grdPlan.DoubleClick += grdPlan_DoubleClick;
 
+        }
+
+        void grdPlan_DoubleClick(object sender, EventArgs e)
+        {
+            
         }
 
         void btnAdd_Click(object sender, EventArgs e)
