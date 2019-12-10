@@ -36,6 +36,8 @@
             this.rtbPlan = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dtpTime = new System.Windows.Forms.DateTimePicker();
+            this.rdbFinish = new System.Windows.Forms.RadioButton();
+            this.rdbUnfinish = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // label3
@@ -65,7 +67,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(166, 220);
+            this.btnCancel.Location = new System.Drawing.Point(144, 240);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 13;
@@ -74,7 +76,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(30, 220);
+            this.btnAdd.Location = new System.Drawing.Point(29, 240);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 12;
@@ -105,11 +107,35 @@
             this.dtpTime.Size = new System.Drawing.Size(260, 20);
             this.dtpTime.TabIndex = 9;
             // 
+            // rdbFinish
+            // 
+            this.rdbFinish.AutoSize = true;
+            this.rdbFinish.Location = new System.Drawing.Point(29, 206);
+            this.rdbFinish.Name = "rdbFinish";
+            this.rdbFinish.Size = new System.Drawing.Size(79, 17);
+            this.rdbFinish.TabIndex = 17;
+            this.rdbFinish.TabStop = true;
+            this.rdbFinish.Text = "hoàn thành";
+            this.rdbFinish.UseVisualStyleBackColor = true;
+            // 
+            // rdbUnfinish
+            // 
+            this.rdbUnfinish.AutoSize = true;
+            this.rdbUnfinish.Location = new System.Drawing.Point(144, 206);
+            this.rdbUnfinish.Name = "rdbUnfinish";
+            this.rdbUnfinish.Size = new System.Drawing.Size(106, 17);
+            this.rdbUnfinish.TabIndex = 18;
+            this.rdbUnfinish.TabStop = true;
+            this.rdbUnfinish.Text = "chưa hoàn thành";
+            this.rdbUnfinish.UseVisualStyleBackColor = true;
+            // 
             // UpdateForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(284, 281);
+            this.Controls.Add(this.rdbUnfinish);
+            this.Controls.Add(this.rdbFinish);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtTime);
             this.Controls.Add(this.label1);
@@ -135,5 +161,7 @@
         private System.Windows.Forms.RichTextBox rtbPlan;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dtpTime;
+        private System.Windows.Forms.RadioButton rdbFinish;
+        private System.Windows.Forms.RadioButton rdbUnfinish;
     }
 }
