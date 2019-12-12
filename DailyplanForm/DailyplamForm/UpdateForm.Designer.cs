@@ -1,4 +1,4 @@
-﻿namespace DailyplamForm
+﻿namespace DailyplanForm
 {
     partial class UpdateForm
     {
@@ -33,17 +33,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.rtbPlan = new System.Windows.Forms.RichTextBox();
+            this.rtbNote = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dtpTime = new System.Windows.Forms.DateTimePicker();
+            this.dtpDate = new System.Windows.Forms.DateTimePicker();
             this.rdbFinish = new System.Windows.Forms.RadioButton();
             this.rdbUnfinish = new System.Windows.Forms.RadioButton();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtPlan = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(244, 172);
+            this.label3.Location = new System.Drawing.Point(243, 213);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(28, 13);
             this.label3.TabIndex = 16;
@@ -51,7 +53,7 @@
             // 
             // txtTime
             // 
-            this.txtTime.Location = new System.Drawing.Point(120, 169);
+            this.txtTime.Location = new System.Drawing.Point(116, 210);
             this.txtTime.Name = "txtTime";
             this.txtTime.Size = new System.Drawing.Size(121, 20);
             this.txtTime.TabIndex = 15;
@@ -59,7 +61,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 172);
+            this.label1.Location = new System.Drawing.Point(9, 213);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 13);
             this.label1.TabIndex = 14;
@@ -67,7 +69,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(144, 240);
+            this.btnCancel.Location = new System.Drawing.Point(143, 286);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 13;
@@ -76,20 +78,20 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(29, 240);
+            this.btnAdd.Location = new System.Drawing.Point(31, 286);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 12;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = true;
             // 
-            // rtbPlan
+            // rtbNote
             // 
-            this.rtbPlan.Location = new System.Drawing.Point(12, 69);
-            this.rtbPlan.Name = "rtbPlan";
-            this.rtbPlan.Size = new System.Drawing.Size(260, 96);
-            this.rtbPlan.TabIndex = 11;
-            this.rtbPlan.Text = "";
+            this.rtbNote.Location = new System.Drawing.Point(11, 104);
+            this.rtbNote.Name = "rtbNote";
+            this.rtbNote.Size = new System.Drawing.Size(260, 96);
+            this.rtbNote.TabIndex = 11;
+            this.rtbNote.Text = "";
             // 
             // label2
             // 
@@ -100,17 +102,17 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "Kế hoạch:";
             // 
-            // dtpTime
+            // dtpDate
             // 
-            this.dtpTime.Location = new System.Drawing.Point(12, 18);
-            this.dtpTime.Name = "dtpTime";
-            this.dtpTime.Size = new System.Drawing.Size(260, 20);
-            this.dtpTime.TabIndex = 9;
+            this.dtpDate.Location = new System.Drawing.Point(12, 18);
+            this.dtpDate.Name = "dtpDate";
+            this.dtpDate.Size = new System.Drawing.Size(260, 20);
+            this.dtpDate.TabIndex = 9;
             // 
             // rdbFinish
             // 
             this.rdbFinish.AutoSize = true;
-            this.rdbFinish.Location = new System.Drawing.Point(29, 206);
+            this.rdbFinish.Location = new System.Drawing.Point(31, 250);
             this.rdbFinish.Name = "rdbFinish";
             this.rdbFinish.Size = new System.Drawing.Size(79, 17);
             this.rdbFinish.TabIndex = 17;
@@ -121,7 +123,7 @@
             // rdbUnfinish
             // 
             this.rdbUnfinish.AutoSize = true;
-            this.rdbUnfinish.Location = new System.Drawing.Point(144, 206);
+            this.rdbUnfinish.Location = new System.Drawing.Point(143, 250);
             this.rdbUnfinish.Name = "rdbUnfinish";
             this.rdbUnfinish.Size = new System.Drawing.Size(106, 17);
             this.rdbUnfinish.TabIndex = 18;
@@ -129,11 +131,29 @@
             this.rdbUnfinish.Text = "chưa hoàn thành";
             this.rdbUnfinish.UseVisualStyleBackColor = true;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 88);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(47, 13);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Ghi chú:";
+            // 
+            // txtPlan
+            // 
+            this.txtPlan.Location = new System.Drawing.Point(74, 50);
+            this.txtPlan.Name = "txtPlan";
+            this.txtPlan.Size = new System.Drawing.Size(197, 20);
+            this.txtPlan.TabIndex = 20;
+            // 
             // UpdateForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 281);
+            this.ClientSize = new System.Drawing.Size(284, 321);
+            this.Controls.Add(this.txtPlan);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.rdbUnfinish);
             this.Controls.Add(this.rdbFinish);
             this.Controls.Add(this.label3);
@@ -141,9 +161,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.rtbPlan);
+            this.Controls.Add(this.rtbNote);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dtpTime);
+            this.Controls.Add(this.dtpDate);
             this.Name = "UpdateForm";
             this.Text = "UpdateForm";
             this.ResumeLayout(false);
@@ -158,10 +178,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.RichTextBox rtbPlan;
+        private System.Windows.Forms.RichTextBox rtbNote;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dtpTime;
+        private System.Windows.Forms.DateTimePicker dtpDate;
         private System.Windows.Forms.RadioButton rdbFinish;
         private System.Windows.Forms.RadioButton rdbUnfinish;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtPlan;
     }
 }
