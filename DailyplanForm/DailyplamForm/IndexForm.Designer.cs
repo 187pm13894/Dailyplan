@@ -42,7 +42,7 @@
             this.grdPlan.Location = new System.Drawing.Point(12, 26);
             this.grdPlan.Name = "grdPlan";
             this.grdPlan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdPlan.Size = new System.Drawing.Size(260, 223);
+            this.grdPlan.Size = new System.Drawing.Size(776, 223);
             this.grdPlan.TabIndex = 0;
             // 
             // menuStrip1
@@ -52,7 +52,7 @@
             this.btnDelete});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(284, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -72,7 +72,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(800, 261);
             this.Controls.Add(this.grdPlan);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;

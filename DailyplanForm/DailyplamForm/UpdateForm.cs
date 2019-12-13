@@ -12,7 +12,7 @@ namespace DailyplanForm
 {
     public partial class UpdateForm : Form
     {
-        private int PlanId, time;
+        private int PlanId;
         private PlanManagement Business;
         public UpdateForm(int ID)
         {
@@ -26,15 +26,19 @@ namespace DailyplanForm
 
         void UpdateForm_Load(object sender, EventArgs e)
         {
-            var plan = this.Business.GetPlan(this.PlanId);
-            this.txtPlan.Text = plan.plan;
-            this.rtbNote.Text = plan.note;
-            time = Int32.Parse(this.txtTime.Text);
-            this.time = plan.time;
-
-            if (plan.progress.HasValue)
+            if (txtTime.Text == null)
             {
-                this.rdbFinish.Checked = plan.progress.Value;
+                var plan = this.Business.GetPlan(this.PlanId);
+                this.txtPlan.Text = plan.plan;
+                this.rtbNote.Text = plan.note;
+                int Time;
+                Time = Int32.Parse(txtTime.Text);
+                Time = plan.time;
+                this.dtpDate.Value = plan.date;
+                if (plan.progress.HasValue)
+                {
+                    this.rdbFinish.Checked = plan.progress.Value;
+                }
             }
         }
 
