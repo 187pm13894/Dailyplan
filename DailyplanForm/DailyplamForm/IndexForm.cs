@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace DailyplanForm
 {
-    public partial class IndexForm : Form
+    public partial class PlanIndexForm : Form
     {
         private PlanManagement Business;
-        public IndexForm()
+        public PlanIndexForm()
         {
             InitializeComponent();
             this.Load += IndexForm_Load;

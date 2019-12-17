@@ -1,6 +1,6 @@
 ﻿namespace DailyplanForm
 {
-    partial class IndexForm
+    partial class PlanIndexForm
     {
         /// <summary>
         /// Required designer variable.
@@ -68,7 +68,7 @@
             this.btnDelete.Size = new System.Drawing.Size(39, 20);
             this.btnDelete.Text = "Xóa";
             // 
-            // IndexForm
+            // PlanIndexForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -76,8 +76,8 @@
             this.Controls.Add(this.grdPlan);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "IndexForm";
-            this.Text = "IndexForm";
+            this.Name = "PlanIndexForm";
+            this.Text = "PlanIndexForm";
             ((System.ComponentModel.ISupportInitialize)(this.grdPlan)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
