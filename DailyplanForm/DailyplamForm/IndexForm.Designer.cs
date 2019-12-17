@@ -32,6 +32,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.btnAdd = new System.Windows.Forms.ToolStripMenuItem();
             this.btnDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnDeleteAll = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.grdPlan)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -49,7 +50,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnAdd,
-            this.btnDelete});
+            this.btnDelete,
+            this.btnDeleteAll});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -67,6 +69,12 @@
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(39, 20);
             this.btnDelete.Text = "Xóa";
+            // 
+            // btnDeleteAll
+            // 
+            this.btnDeleteAll.Name = "btnDeleteAll";
+            this.btnDeleteAll.Size = new System.Drawing.Size(71, 20);
+            this.btnDeleteAll.Text = "Xóa tất cả";
             // 
             // PlanIndexForm
             // 
@@ -92,5 +100,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem btnAdd;
         private System.Windows.Forms.ToolStripMenuItem btnDelete;
+        private System.Windows.Forms.ToolStripMenuItem btnDeleteAll;
     }
 }

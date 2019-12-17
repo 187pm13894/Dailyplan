@@ -21,6 +21,17 @@ namespace DailyplanForm
             this.btnDelete.Click += btnDelete_Click;
             this.grdPlan.DoubleClick += grdPlan_DoubleClick;
             this.Business = new PlanManagement();
+            this.btnDeleteAll.Click +=btnDeleteAll_Click;
+        }
+
+        void btnDeleteAll_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("ban co muon xoa thong tin nay?", "xac nhan",
+                    MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+            {
+                grdPlan.DataSource = null;
+                MessageBox.Show("xoa thanh cong");
+            }
         }
 
         void btnDelete_Click(object sender, EventArgs e)
