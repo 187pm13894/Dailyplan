@@ -13,10 +13,10 @@ namespace DailyplanForm
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class PlansEntities : DbContext
+    public partial class PlanEntities : DbContext
     {
-        public PlansEntities()
-            : base("name=PlansEntities")
+        public PlanEntities()
+            : base("name=PlanEntities")
         {
         }
     

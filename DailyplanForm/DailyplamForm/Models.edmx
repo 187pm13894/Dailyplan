@@ -4,38 +4,38 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="PlansModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="PlanModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="dplan">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="date" Type="datetime" Nullable="false" />
-          <Property Name="plan" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="note" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="time" Type="int" Nullable="false" />
-          <Property Name="progress" Type="bit" />
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Plan" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Note" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Time" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="Progress" Type="bit" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="PlansModelStoreContainer">
+        <EntityContainer Name="PlanModelStoreContainer">
           <EntitySet Name="dplan" EntityType="Self.dplan" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="PlansModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="PlanModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="dplan">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="date" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="plan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="note" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="time" Type="Int32" Nullable="false" />
-          <Property Name="progress" Type="Boolean" />
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Plan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Note" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Time" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Progress" Type="Boolean" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="PlansEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="PlanEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="dplans" EntityType="Self.dplan" />
         </EntityContainer>
       </Schema>
@@ -43,16 +43,16 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="PlansModelStoreContainer" CdmEntityContainer="PlansEntities">
+        <EntityContainerMapping StorageEntityContainer="PlanModelStoreContainer" CdmEntityContainer="PlanEntities">
           <EntitySetMapping Name="dplans">
-            <EntityTypeMapping TypeName="PlansModel.dplan">
+            <EntityTypeMapping TypeName="PlanModel.dplan">
               <MappingFragment StoreEntitySet="dplan">
                 <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="date" ColumnName="date" />
-                <ScalarProperty Name="plan" ColumnName="plan" />
-                <ScalarProperty Name="note" ColumnName="note" />
-                <ScalarProperty Name="time" ColumnName="time" />
-                <ScalarProperty Name="progress" ColumnName="progress" />
+                <ScalarProperty Name="Plan" ColumnName="Plan" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="Time" ColumnName="Time" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Progress" ColumnName="Progress" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

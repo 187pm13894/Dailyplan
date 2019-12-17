@@ -32,8 +32,8 @@ namespace DailyplanForm
             var time = this.txtTime.Text;
             var note = this.rtbNote.Text;
             var date = this.dtpDate.Value;
-            bool progress = false;
-            this.Business.AddPlan(note, plan, Int32.Parse(time), progress, date);
+            var progress = false;
+            this.Business.AddPlan(note, plan, time, progress, date);
             MessageBox.Show("them thanh cong");
             this.Close();
         }

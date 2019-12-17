@@ -26,20 +26,13 @@ namespace DailyplanForm
 
         void UpdateForm_Load(object sender, EventArgs e)
         {
-            if (txtTime.Text == null)
-            {
                 var plan = this.Business.GetPlan(this.PlanId);
-                this.txtPlan.Text = plan.plan;
-                this.rtbNote.Text = plan.note;
-                int Time;
-                Time = Int32.Parse(txtTime.Text);
-                Time = plan.time;
-                this.dtpDate.Value = plan.date;
-                if (plan.progress.HasValue)
-                {
-                    this.rdbFinish.Checked = plan.progress.Value;
-                }
-            }
+                this.txtPlan.Text = plan.Plan;
+                this.rtbNote.Text = plan.Note;
+                this.txtTime.Text = plan.Time;
+                this.dtpDate.Value = plan.Date;
+                this.rdbFinish.Checked = plan.Progress;
+                this.rdbUnfinish.Checked = plan.Progress;
         }
 
         void btnCancel_Click(object sender, EventArgs e)
@@ -60,7 +53,7 @@ namespace DailyplanForm
                 progress = true;
             else
                 progress = false;
-            this.Business.EditPlan(this.PlanId, plan, note, Int32.Parse(time), progress, date);
+            this.Business.EditPlan(this.PlanId, plan, note, time, progress, date);
             MessageBox.Show("thay doi thanh cong");
             this.Close();
         }
