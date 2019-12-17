@@ -65,8 +65,8 @@
             // btnDelete
             // 
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(37, 20);
-            this.btnDelete.Text = "xóa";
+            this.btnDelete.Size = new System.Drawing.Size(39, 20);
+            this.btnDelete.Text = "Xóa";
             // 
             // IndexForm
             // 
